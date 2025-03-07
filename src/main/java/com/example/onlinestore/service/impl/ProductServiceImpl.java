@@ -91,7 +91,7 @@ public class ProductServiceImpl implements ProductService {
                         List<Product> p = new ArrayList<>();
                         p.add(entry.getValue());
                         response.setRecords(p);response.setTotal(producteCache.size());response.setPageNum(request.getPageNum());response.setPageSize(request.getPageSize());
-                        // return response;
+                        return response;
                     }
                 }
             }
